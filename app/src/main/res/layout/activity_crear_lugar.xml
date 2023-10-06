@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".actividades.CrearLugarActivity">
+
+    <!-- Título de la página -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/agregar_nuevo_lugar"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:background="@color/verde" />
+
+    <!-- Formulario para agregar un nuevo lugar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Campo de nombre del lugar -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nombre_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/gris"
+            app:boxStrokeColor="@color/verde"
+            android:hint="@string/nombre_del_lugar"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/verde">
+
+            <EditText
+                android:id="@+id/editTextPlaceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Campo de descripción del lugar -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/descripcion_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/gris"
+            app:boxStrokeColor="@color/verde"
+            android:hint="@string/descripcion"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/verde">
+
+            <EditText
+                android:id="@+id/editTextPlaceDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:backgroundTint="@android:color/transparent"
+                android:hint=""
+                android:textColor="@android:color/black"
+                android:minLines="4"
+                android:gravity="top" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Campo de ID de categoría -->
+        <Spinner
+            android:id="@+id/spinnerCiudad"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/seleccionar_categoria"
+            android:background="@drawable/rounded_edittext" />
+
+        <!-- Campo de dirección del lugar -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/direccion_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/gris"
+            app:boxStrokeColor="@color/verde"
+            android:hint="@string/direccion_del_lugar"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/verde">
+
+            <EditText
+                android:id="@+id/editTextPlaceAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Campo de latitud -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/latitud_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/gris"
+            app:boxStrokeColor="@color/verde"
+            android:hint="@string/latitud"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/verde">
+
+            <EditText
+                android:id="@+id/editTextPlaceLatitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Campo de longitud -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/longitud_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/gris"
+            app:boxStrokeColor="@color/verde"
+            android:hint="@string/longitud"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/verde">
+
+            <EditText
+                android:id="@+id/editTextPlaceLongitude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Campo de ID de ciudad -->
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@android:color/black"
+            android:hint="@string/seleccionar_ciudad"
+            android:background="@drawable/rounded_edittext" />
+
+        <!-- Campo de teléfono del lugar -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/telefono_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/gris"
+            app:boxStrokeColor="@color/verde"
+            android:hint="@string/telefono_lugar"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/verde">
+
+        <!-- EditText -->
+        <EditText
+            android:id="@+id/editTextPlacePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:backgroundTint="@android:color/transparent"
+            android:hint=""
+            android:textColor="@android:color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Botón para agregar el lugar -->
+        <Button
+            android:id="@+id/buttonAddPlace"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:text="@string/agregar_lugar"
+            android:backgroundTint="@color/verde_botones" />
+    </LinearLayout>
+</RelativeLayout>

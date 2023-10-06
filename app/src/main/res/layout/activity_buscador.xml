@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <!-- Encabezado con el campo de búsqueda -->
+    <fragment
+        android:id="@+id/barra_superior"
+        class="com.edu.eam.unilocalapp.fragmentos.MenuPrincipalFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Botones de categorías -->
+    <HorizontalScrollView
+        android:id="@+id/category_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/barra_superior"
+        android:layout_marginTop="5dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Agrega botones de categorías aquí -->
+            <Button
+                android:id="@+id/btn_category_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categoría 1" />
+
+            <Button
+                android:id="@+id/btn_category_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categoría 2" />
+
+            <!-- Agrega más botones según tus categorías -->
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- RecyclerView para mostrar búsquedas recientes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_recent_searches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/category_scroll_view"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:scrollbars="vertical"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</RelativeLayout>

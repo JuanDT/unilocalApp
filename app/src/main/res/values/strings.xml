@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">unilocalApp</string>
+    <!-- Textos login -->
+    <string name="username">Nombre de usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login_button">Iniciar sesión</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="register">Registrarse</string>
+    <string name="copyright">© 2023 Unilocal. Todos los derechos reservados.</string>
+    <string name="logo_description">Logo de la aplicación</string>
+
+    <!-- Textos de validaciones -->
+    <string name="es_obligatorio">Este campo es obligatorio</string>
+    <string name="maximo_caracteres">Máximo 10 caracteres</string>
+    <string name="datos_correctos">Los datos son correctos</string>
+    <string name="datos_incorrectos">Los datos son incorrectos</string>
+    <string name="minimo_caracteres_nick">Mínimo 6 caracteres para el nickname</string>
+    <string name="contrasena_minimo_caracteres">La contraseña debe tener al menos 8 caracteres</string>
+    <string name="contrasena_requisitos">La contraseña debe contener al menos una mayúscula y un número</string>
+    <string name="usuario_existente">El usuario ya existe, ingresa otro correo</string>
+
+    <!-- Tectos sucess -->
+    <string name="usuario_creado">Registrado correctamente</string>
+
+    <!-- RegistroActivity -->
+    <string name="registro_titulo">Registro</string>
+    <string name="nombre">Nombre</string>
+    <string name="nombre_hint">Ingrese su nombre</string>
+    <string name="nickname">Nickname</string>
+    <string name="nickname_hint">Ingrese un nickname (máximo 10 caracteres)</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="email_hint">Ingrese su correo electrónico</string>
+    <string name="password_hint">Ingrese su contraseña</string>
+    <string name="registro_button">Registrarse</string>
+
+
+    <!-- activity_registro.xml -->
+    <string name="crear_cuenta">Crear cuenta</string>
+    <string name="nombre_registrar">Nombre</string>
+    <string name="nickname_registrar">Nickname</string>
+    <string name="email_registrar">Correo Electrónico</string>
+    <string name="password_registrar">Contraseña</string>
+    <string name="registro_button_registrar">Registrarse</string>
+    <string name="continuar_con_google_registrar">Continuar con Google</string>
+
+    <!-- Textos del navigation bar -->
+    <string name="inicio">Explorar</string>
+    <string name="guardados">Guardados</string>
+    <string name="comunidad">Comunidad</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- Textos agregar lugar-->
+    <!-- Strings para los campos -->
+    <string name="nombre_del_lugar">Nombre del Lugar</string>
+    <string name="descripcion">Descripción</string>
+    <string name="estado_del_lugar">Estado del Lugar</string>
+    <string name="seleccionar_categoria">Seleccionar Categoría</string>
+    <string name="direccion_del_lugar">Dirección del Lugar</string>
+    <string name="latitud">Latitud</string>
+    <string name="longitud">Longitud</string>
+    <string name="seleccionar_ciudad">Seleccionar Ciudad</string>
+    <string name="telefono_lugar">Telefono</string>
+
+    <string name="agregar_lugar">Agregar Lugar</string>
+
+    <string name="agregar_nuevo_lugar">Agregar un Nuevo Lugar</string>
+    <string name="lugar_creado">Lugar creado correctamente. Te avisaremos cuando sea aprovado</string>
+
+    <string name="ic_person">&#xf007;</string>
+
+    <!-- Textos detalle lugar -->
+    <string name="info_lugar">Información del lugar</string>
+    <string name="comentarios">Comentarios</string>
+    <string name="title_activity_buscador">BuscadorActivity</string>
+
+
+    <!-- Textos my perfil  -->
+
+    <string name="nombre_usuario">Nombre del Usuario</string>
+    <string name="correo_electronico">usuario@correo.com</string>
+    <string name="editar_perfil">Editar Perfil</string>
+    <string name="imagen_de_perfil">Imagen de Perfil</string>
+
+
+    <!-- Strings para la vista de edición de perfil -->
+    <string name="contraseña">Contraseña</string>
+    <string name="actualizar_perfil">Actualizar Perfil</string>
+
+</resources>

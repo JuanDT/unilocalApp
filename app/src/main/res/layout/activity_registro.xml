@@ -1,0 +1,158 @@
+<!-- activity_registro.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/verde_fondo"
+    tools:context=".actividades.RegistroActivity">
+
+    <!-- Título "Crear Cuenta" -->
+    <TextView
+        style="@style/TituloGrande"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/crear_cuenta"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp" />
+
+    <!-- Nombre -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nombre_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre"
+        android:layout_marginTop="70dp"
+        app:boxStrokeColor="@color/purple_200"
+        android:textColorHint="@color/gris"
+        >
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gris"
+            android:backgroundTint="@android:color/transparent"
+            android:hint=""
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Nickname -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nickname_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nickname"
+        android:layout_marginTop="8dp"
+        app:boxStrokeColor="@color/purple_200"
+        android:textColorHint="@color/gris"
+        >
+
+        <EditText
+            android:id="@+id/editTextNickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gris"
+            android:backgroundTint="@android:color/transparent"
+            android:hint=""
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Correo -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/correo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:layout_marginTop="8dp"
+        app:boxStrokeColor="@color/purple_200"
+        android:textColorHint="@color/gris">
+
+        <EditText
+            android:id="@+id/editTextCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:hint=""
+            android:textColor="@color/gris"
+            android:inputType="textEmailAddress"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Contraseña -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_registrar"
+        android:layout_marginTop="8dp"
+        app:boxStrokeColor="@color/purple_200"
+        android:textColorHint="@color/gris">
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:hint=""
+            android:layout_marginTop="8dp"
+            android:textColor="@color/gris"
+            android:inputType="textPassword"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Botón de registro -->
+    <Button
+        android:id="@+id/buttonRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/verde_botones"
+        android:text="@string/registro_button"
+        android:textColor="@color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        />
+
+
+
+    <!-- Botón "Continuar con Google" (sin funcionalidad) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp">
+
+        <!-- Botón "Continuar con Google" (sin funcionalidad) -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            android:contentDescription="@string/continuar_con_google_registrar"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continuar con Google"
+            android:textColor="@color/gris"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
